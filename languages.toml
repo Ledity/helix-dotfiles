@@ -1,0 +1,15 @@
+[[language]]
+name = "c"
+formatter = { command = "clang-format", args = [ "--style=file", "--assume-filename=.c", "--fallback-style=GNU"] }
+auto-format = true
+
+[[language]]
+name = "kotlin"
+# formatter = { command = "ktfmt-stdin" }
+formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
+auto-format = false
+
+[[language]]
+name = "java"
+formatter = { command = "clang-format", args = [ "--style=file", "--assume-filename=.java", "--fallback-style=Google"] }
+auto-format = true
