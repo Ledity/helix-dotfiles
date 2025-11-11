@@ -13,3 +13,10 @@ auto-format = false
 name = "java"
 formatter = { command = "clang-format", args = [ "--style=file", "--assume-filename=.java", "--fallback-style=Google"] }
 auto-format = true
+
+[[language]]
+name = "groovy"
+language-servers = [ "groovy-language-server" ]
+
+[language-server.groovy-language-server]
+command = "groovy-language-server"
