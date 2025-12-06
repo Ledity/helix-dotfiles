@@ -5,9 +5,8 @@ auto-format = true
 
 [[language]]
 name = "kotlin"
-# formatter = { command = "ktfmt-stdin" }
-formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
-auto-format = false
+# formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
+auto-format = true
 
 [[language]]
 name = "java"
@@ -20,3 +19,5 @@ language-servers = [ "groovy-language-server" ]
 
 [language-server.groovy-language-server]
 command = "groovy-language-server"
+[language-server.kotlin-language-server]
+config = { provideFormatter = true }
