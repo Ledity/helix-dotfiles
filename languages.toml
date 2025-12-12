@@ -1,6 +1,6 @@
 [[language]]
 name = "c"
-formatter = { command = "clang-format", args = [ "--style=file", "--assume-filename=.c", "--fallback-style=GNU"] }
+formatter = { command = "clang-format", args = [ "--style=file", "--assume-filename=.c", "--fallback-style=WebKit"] }
 auto-format = true
 
 [[language]]
