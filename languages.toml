@@ -5,8 +5,8 @@ auto-format = true
 
 [[language]]
 name = "kotlin"
-# formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
-auto-format = true
+formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
+# auto-format = true
 language-servers = [ "kotlin-lsp", "kotlin-language-server" ]
 
 [[language]]
@@ -21,8 +21,8 @@ language-servers = [ "groovy-language-server" ]
 [language-server.groovy-language-server]
 command = "groovy-language-server"
 
-# [language-server.kotlin-language-server]
-# config = { provideFormatter = true }
+[language-server.kotlin-language-server]
+config = { provideFormatter = false }
 
 [language-server.kotlin-lsp]
 command = "kotlin-lsp"
