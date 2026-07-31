@@ -7,7 +7,7 @@ auto-format = true
 name = "kotlin"
 formatter = { command = "ktfmt", args = [ "--kotlinlang-style", "-" ] }
 # auto-format = true
-language-servers = [ "kotlin-lsp", "kotlin-language-server" ]
+language-servers = [ "kotlin_lsp", "kotlin-language-server" ]
 
 [[language]]
 name = "java"
@@ -24,7 +24,7 @@ command = "groovy-language-server"
 [language-server.kotlin-language-server]
 config = { provideFormatter = false }
 
-[language-server.kotlin-lsp]
-command = "kotlin-lsp"
+[language-server.kotlin_lsp]
+command = "intellij-server"
 args = [ "--sdtio" ]
 required-root-patterns = [ "settings.gradle", "settings.gradle.kts" ]
